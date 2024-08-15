@@ -1,0 +1,38 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-385,-224",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port pcie_refclk -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port pcie_mgt -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD -left
+preplace inst pcie_axi_bridge -pg 1 -lvl 1 -x 150 -y 90 -swap {5 1 2 3 4 0 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45} -defaultsOSRD -pinDir pcie_mgt left -pinY pcie_mgt 20L -pinDir pcie_refclk left -pinY pcie_refclk 0L -pinDir M_AXI_B right -pinY M_AXI_B 0R -pinDir axi_aresetn right -pinY axi_aresetn 20R -pinDir axi_aclk right -pinY axi_aclk 40R
+preplace inst system_interconnect -pg 1 -lvl 2 -x 440 -y 90 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 58 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 38 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 79 78} -defaultsOSRD -pinDir S00_AXI left -pinY S00_AXI 0L -pinDir M00_AXI right -pinY M00_AXI 140R -pinDir M01_AXI right -pinY M01_AXI 0R -pinDir aclk left -pinY aclk 40L -pinDir aresetn left -pinY aresetn 20L
+preplace inst axi_revision -pg 1 -lvl 3 -x 710 -y 230 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 21 20} -defaultsOSRD -pinDir S_AXI left -pinY S_AXI 0L -pinDir AXI_ACLK left -pinY AXI_ACLK 40L -pinDir AXI_ARESETN left -pinY AXI_ARESETN 20L
+preplace inst example_slave -pg 1 -lvl 3 -x 710 -y 90 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 21 20} -defaultsOSRD -pinDir S_AXI left -pinY S_AXI 0L -pinDir clk left -pinY clk 40L -pinDir resetn left -pinY resetn 20L
+preplace netloc pcie_bridge_axi_aclk 1 1 2 300 30 580
+preplace netloc pcie_bridge_axi_aresetn 1 1 2 280 10 600
+preplace netloc CLK_IN_D_0_1 1 0 1 NJ 90
+preplace netloc pcie_axi_bridge_M_AXI_B 1 1 1 N 90
+preplace netloc pcie_bridge_pcie_mgt 1 0 1 NJ 110
+preplace netloc system_interconnect_M00_AXI 1 2 1 N 230
+preplace netloc system_interconnect_M01_AXI 1 2 1 N 90
+levelinfo -pg 1 0 150 440 710 820
+pagesize -pg 1 -db -bbox -sgen -130 0 820 330
+",
+   "No Loops_ScaleFactor":"1.0",
+   "No Loops_TopLeft":"-401,-63",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace inst pcie_bridge -pg 1 -lvl 2 -x 480 -y -220 -defaultsOSRD
+preplace inst util_ds_buf_0 -pg 1 -lvl 1 -x 140 -y -200 -defaultsOSRD
+levelinfo -pg 1 -20 140 480 660
+pagesize -pg 1 -db -bbox -sgen -20 -480 660 260
+"
+}
+{
+   "da_clkrst_cnt":"2"
+}
